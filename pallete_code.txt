@@ -1,0 +1,43 @@
+- CSV
+
+26173E, 28187D, 630D7A, 94007A, 3D99CA, 5A4ED6, 02B3F1, 1BD7F8, 46FEEC, 51E946, EAE43E, FFFF4C, ED4BA8, DA11C9, B03DCE
+
+- With #
+
+#26173E, #28187D, #630D7A, #94007A, #3D99CA, #5A4ED6, #02B3F1, #1BD7F8, #46FEEC, #51E946, #EAE43E, #FFFF4C, #ED4BA8, #DA11C9, #B03DCE
+
+- Array
+
+["26173E", "28187D", "630D7A", "94007A", "3D99CA", "5A4ED6", "02B3F1", "1BD7F8", "46FEEC", "51E946", "EAE43E", "FFFF4C", "ED4BA8", "DA11C9", "B03DCE"]
+
+- Object
+
+{"Night Void": "26173E", "Midnight Indigo": "28187D", "Dark Cyber Violet": "630D7A", "Deep Magenta Wine": "94007A", "Steel Blue": "3D99CA", "Electric Indigo": "5A4ED6", "Cyber Sky Blue": "02B3F1", "Vivid Electric Cyan": "1BD7F8", "Luminous Aqua": "46FEEC", "Toxic Neon Green": "51E946", "Acid Lime Yellow": "EAE43E", "Cyberpunk Yellow": "FFFF4C", "Lucy Hot Pink": "ED4BA8", "Vivid Neon Fuchsia": "DA11C9", "Neon Orchid": "B03DCE"}
+
+- Extended Array
+
+[{"name": "Night Void", "hex": "26173E", "rgb": [38, 23, 62], "cmyk": [39, 63, 0, 76], "hsb": [263, 63, 24], "hsl": [263, 46, 17]}, {"name": "Midnight Indigo", "hex": "28187D", "rgb": [40, 24, 125], "cmyk": [68, 81, 0, 51], "hsb": [250, 81, 49], "hsl": [250, 68, 29]}, {"name": "Dark Cyber Violet", "hex": "630D7A", "rgb": [99, 13, 122], "cmyk": [19, 89, 0, 52], "hsb": [287, 89, 48], "hsl": [287, 81, 26]}, {"name": "Deep Magenta Wine", "hex": "94007A", "rgb": [148, 0, 122], "cmyk": [0, 100, 18, 42], "hsb": [311, 100, 58], "hsl": [311, 100, 29]}, {"name": "Steel Blue", "hex": "3D99CA", "rgb": [61, 153, 202], "cmyk": [70, 24, 0, 21], "hsb": [201, 70, 79], "hsl": [201, 57, 52]}, {"name": "Electric Indigo", "hex": "5A4ED6", "rgb": [90, 78, 214], "cmyk": [58, 64, 0, 16], "hsb": [245, 64, 84], "hsl": [245, 62, 57]}, {"name": "Cyber Sky Blue", "hex": "02B3F1", "rgb": [2, 179, 241], "cmyk": [99, 26, 0, 5], "hsb": [196, 99, 95], "hsl": [196, 98, 48]}, {"name": "Vivid Electric Cyan", "hex": "1BD7F8", "rgb": [27, 215, 248], "cmyk": [89, 13, 0, 3], "hsb": [189, 89, 97], "hsl": [189, 94, 54]}, {"name": "Luminous Aqua", "hex": "46FEEC", "rgb": [70, 254, 236], "cmyk": [72, 0, 7, 0], "hsb": [174, 72, 100], "hsl": [174, 99, 64]}, {"name": "Toxic Neon Green", "hex": "51E946", "rgb": [81, 233, 70], "cmyk": [65, 0, 70, 9], "hsb": [116, 70, 91], "hsl": [116, 79, 59]}, {"name": "Acid Lime Yellow", "hex": "EAE43E", "rgb": [234, 228, 62], "cmyk": [0, 3, 74, 8], "hsb": [58, 74, 92], "hsl": [58, 80, 58]}, {"name": "Cyberpunk Yellow", "hex": "FFFF4C", "rgb": [255, 255, 76], "cmyk": [0, 0, 70, 0], "hsb": [60, 70, 100], "hsl": [60, 100, 65]}, {"name": "Lucy Hot Pink", "hex": "ED4BA8", "rgb": [237, 75, 168], "cmyk": [0, 68, 29, 7], "hsb": [326, 68, 93], "hsl": [326, 82, 61]}, {"name": "Vivid Neon Fuchsia", "hex": "DA11C9", "rgb": [218, 17, 201], "cmyk": [0, 92, 8, 15], "hsb": [305, 92, 85], "hsl": [305, 86, 46]}, {"name": "Neon Orchid", "hex": "B03DCE", "rgb": [176, 61, 206], "cmyk": [15, 70, 0, 19], "hsb": [288, 70, 81], "hsl": [288, 60, 52]}]
+
+- XML
+
+<palette>
+  <color name="Night Void" hex="26173E" r="38" g="23" b="62" />
+  <color name="Midnight Indigo" hex="28187D" r="40" g="24" b="125" />
+  <color name="Dark Cyber Violet" hex="630D7A" r="99" g="13" b="122" />
+  <color name="Deep Magenta Wine" hex="94007A" r="148" g="0" b="122" />
+  <color name="Steel Blue" hex="3D99CA" r="61" g="153" b="202" />
+  <color name="Electric Indigo" hex="5A4ED6" r="90" g="78" b="214" />
+  <color name="Cyber Sky Blue" hex="02B3F1" r="2" g="179" b="241" />
+  <color name="Vivid Electric Cyan" hex="1BD7F8" r="27" g="215" b="248" />
+  <color name="Luminous Aqua" hex="46FEEC" r="70" g="254" b="236" />
+  <color name="Toxic Neon Green" hex="51E946" r="81" g="233" b="70" />
+  <color name="Acid Lime Yellow" hex="EAE43E" r="234" g="228" b="62" />
+  <color name="Cyberpunk Yellow" hex="FFFF4C" r="255" g="255" b="76" />
+  <color name="Lucy Hot Pink" hex="ED4BA8" r="237" g="75" b="168" />
+  <color name="Vivid Neon Fuchsia" hex="DA11C9" r="218" g="17" b="201" />
+  <color name="Neon Orchid" hex="B03DCE" r="176" g="61" b="206" />
+</palette>
+
+- Syntax roles
+
+{"keyword": "ED4BA8", "variable": "1BD7F8", "property": "46FEEC", "function": "FFFF4C", "type": "B03DCE", "constant": "EAE43E", "comment": "3D99CA", "error": "ED4BA8"}

@@ -1,0 +1,26 @@
+name: Cyberpunk Edgerunners
+accent: "#FFFF4C"
+cursor: "#FFFF4C"
+background: "#26173E"
+foreground: "#46FEEC"
+details: darker
+
+terminal_colors:
+  normal:
+    black:   "#26173E"
+    red:     "#ED4BA8"
+    green:   "#51E946"
+    yellow:  "#EAE43E"
+    blue:    "#5A4ED6"
+    magenta: "#DA11C9"
+    cyan:    "#02B3F1"
+    white:   "#46FEEC"
+  bright:
+    black:   "#3D99CA"
+    red:     "#ED4BA8"
+    green:   "#51E946"
+    yellow:  "#FFFF4C"
+    blue:    "#5A4ED6"
+    magenta: "#B03DCE"
+    cyan:    "#1BD7F8"
+    white:   "#46FEEC"
