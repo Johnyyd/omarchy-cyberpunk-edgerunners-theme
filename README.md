@@ -1,14 +1,14 @@
 # Omarchy Cyberpunk Edgerunners Theme
 
-Cyberpunk Edgerunners is a dark futuristic Omarchy theme inspired by Studio Trigger and CD Projekt Red's *Cyberpunk: Edgerunners*, featuring iconic neon yellow, luminous cyan, and hot pink accents against a deep Night City dark purple void (`#26173E`).
+Cyberpunk Edgerunners is a dark futuristic Omarchy theme inspired by Studio Trigger and CD Projekt Red's *Cyberpunk: Edgerunners*, featuring iconic Cyberpunk neon yellow, luminous cyan, and vivid fuchsia/hot pink accents against a deep Night City dark purple void (`#26173E`). Rounded glass surfaces with glowing chromatic cyberware borders and luminous UI treatments capture the electric atmosphere of Night City.
 
 ## Preview
 
-![Cyberpunk Edgerunners preview](pallete_code.jpg)
+![Cyberpunk Edgerunners preview](preview.png)
 
 ## Install
 
-### Complete local install (Recommended)
+### Option 1: Complete local install (Recommended)
 For a complete install with automatic backups, VS Code theme extension synchronization, transparent background window rules, and a clean uninstall path, run:
 
 ```bash
@@ -16,9 +16,9 @@ For a complete install with automatic backups, VS Code theme extension synchroni
 ```
 
 - Installs Cyberpunk Edgerunners as an Omarchy theme matching official template specifications.
-- Configures Kitty, Ghostty, Alacritty, and Foot with clean transparent backgrounds (`background_opacity 0.80`).
-- Configures Hyprland with chromatic border gradients (`#FFFF4C` -> `#ED4BA8` -> `#1BD7F8`) and transparency rules for editors and apps.
-- Automatically generates and synchronizes the rich Cyberpunk Edgerunners color theme extension for VS Code / Cursor / VSCodium.
+- Configures Kitty, Alacritty, Ghostty, Foot, and Warp with clean transparent backgrounds (`background_opacity 0.80`).
+- Configures Hyprland with chromatic border gradients (`#DA11C9` -> `#FFFF4C` -> `#1BD7F8`) and transparency rules for VS Code, Cursor, and VSCodium.
+- Automatically generates and synchronizes the rich Cyberpunk Edgerunners color theme extension for VS Code / Cursor.
 - Creates automatic backups of previous theme, wallpaper, and editor settings.
 
 Restore previous configuration at any time with:
@@ -27,22 +27,49 @@ Restore previous configuration at any time with:
 ./uninstall.sh
 ```
 
+### Option 2: Standard Omarchy installer
+To install directly from the remote git repository:
+
+```bash
+omarchy-theme-install https://github.com/Johnyyd/omarchy-cyperpunk-edgerunners-theme
+```
+
 ## What's Included
 
 - **Hyprland Window Rules**: Window transparency rules (`0.80` active, `0.75` inactive) for VS Code, Cursor, VSCodium, Antigravity IDE, GitHub Desktop, Obsidian, Zed, Discord, Slack, Telegram, Spotify, and Nautilus.
-- **Terminals**: Clean transparent background configurations (`0.80` opacity) for Kitty, Alacritty, Ghostty, Foot, and Warp.
-- **TUIs & Monitors**: Native transparent terminal backgrounds and custom gradient styling for `btop`, `cava`, `helix`, and `neovim`.
+- **Terminals**: Clean transparent background configurations (`0.80` opacity, blur disabled) for Kitty, Alacritty, Ghostty, Foot, and Warp.
+- **TUIs & Monitors**: Native transparent terminal backgrounds for `btop` (`main_bg=""`), `helix` (`ui.background={}`), and `neovim`. Custom meter gradients and audio waveforms in `btop` and `cava`.
 - **VS Code / Cursor / VSCodium**: Full multi-color syntax highlighting (`vscode-theme.json`) covering TextMate scopes and semantic tokens:
   - **Keywords & Control Flow**: `#ED4BA8` (Lucy Hot Pink)
   - **Functions & Methods**: `#FFFF4C` (Cyberpunk Neon Yellow)
   - **Types & Interfaces**: `#B03DCE` (Neon Orchid)
-  - **Strings**: `#51E946` (Toxic Neon Green)
-  - **Variables & Parameters**: `#1BD7F8` (Electric Cyan)
+  - **Strings & Secondary Accents**: `#DA11C9` (Vivid Neon Fuchsia)
+  - **Variables & Parameters**: `#1BD7F8` (Vivid Electric Cyan)
   - **Numbers & Constants**: `#EAE43E` (Acid Lime Yellow)
-  - **Comments**: `#3D99CA` (Steel Blue)
+  - **Comments & Documentation**: `#3D99CA` (Steel Blue)
 - **Editors & TUIs**: Native configurations for Neovim (`aether.nvim` v3 with LazyVim), Helix, Zed, Pi, and Claude CLI.
 - **Desktop Integrations**: Styled layouts for Waybar, Mako, Walker, SwayOSD, and Hyprlock.
 - **Vencord Theme**: Standalone [Vencord theme](vencord.theme.css) with custom layered treatment for Discord.
+
+## Wallpapers
+
+<table>
+  <tr>
+    <td><img src="backgrounds/01-david-and-lucy.jpg" width="220" alt="David and Lucy"></td>
+    <td><img src="backgrounds/02-david-and-lucy.jpg" width="220" alt="David and Lucy"></td>
+    <td><img src="backgrounds/03-david-and-lucy.jpg" width="220" alt="David and Lucy"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/04-lucy.jpg" width="220" alt="Lucy"></td>
+    <td><img src="backgrounds/05-lucy.jpg" width="220" alt="Lucy"></td>
+    <td><img src="backgrounds/06-cyperpunk-edgerunners.jpg" width="220" alt="Cyberpunk Edgerunners"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/07-night-city.jpg" width="220" alt="Night City"></td>
+    <td><img src="backgrounds/08-david.jpg" width="220" alt="David Martinez"></td>
+    <td><img src="backgrounds/09-egderunners.jpg" width="220" alt="Edgerunners"></td>
+  </tr>
+</table>
 
 ## Requirements
 

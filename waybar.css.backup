@@ -1,9 +1,10 @@
 @define-color background #26173E;
 @define-color foreground #46FEEC;
-@define-color border alpha(@accent, 0.4);
-@define-color accent #FFFF4C;
-@define-color fire #ED4BA8;
-@define-color panel-tint rgba(2, 179, 241, 0.08);
+@define-color border alpha(@accent, 0.5);
+@define-color accent #DA11C9;
+@define-color fire #DA11C9;
+@define-color yellow #FFFF4C;
+@define-color panel-tint rgba(218, 17, 201, 0.08);
 @define-color panel alpha(@background, 0.4);
 
 window#waybar {
@@ -25,7 +26,7 @@ window#waybar {
 #workspaces button.focused,
 #custom-launcher,
 #window {
-    color: @fire;
+    color: @accent;
 }
 
 /* Opaque popups, menus, and tooltips */
@@ -33,7 +34,7 @@ tooltip,
 menu {
     background: #26173E;
     color: @foreground;
-    border: 1px solid @fire;
+    border: 1px solid @accent;
     border-radius: 8px;
     opacity: 1;
 }

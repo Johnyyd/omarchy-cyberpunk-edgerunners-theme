@@ -77,7 +77,7 @@ printf '%s\n' "$backup_dir" > "$state_dir/latest-backup"
 
 omarchy theme set "$theme_name"
 
-# Apply Firefly Hyprland configuration (with transparent window rules)
+# Apply Cyberpunk Edgerunners Hyprland configuration (with transparent window rules)
 cp -- "$repo_dir/hyprland.lua" "$runtime_theme_dir/hyprland.lua"
 omarchy-restart-hyprctl 2>/dev/null || true
 
@@ -92,6 +92,16 @@ for conf in kitty.conf alacritty.toml ghostty.conf foot.ini btop.theme; do
   fi
 done
 omarchy-restart-terminal 2>/dev/null || true
+
+# Sync cliamp theme configuration
+if command -v cliamp >/dev/null 2>&1 || [[ -d "$HOME/.config/cliamp" ]]; then
+  mkdir -p "$HOME/.config/cliamp/themes"
+  cp -- "$repo_dir/cliamp.toml" "$HOME/.config/cliamp/themes/cyberpunk-edgerunners.toml"
+  if [[ ! -f "$HOME/.config/cliamp/config.toml" ]] || ! grep -q "cyberpunk-edgerunners" "$HOME/.config/cliamp/config.toml" 2>/dev/null; then
+    printf 'theme = "cyberpunk-edgerunners"\n' > "$HOME/.config/cliamp/config.toml"
+  fi
+  cliamp theme cyberpunk-edgerunners 2>/dev/null || true
+fi
 
 echo "Cyberpunk Edgerunners theme installed and applied."
 echo "Backup: $backup_dir"

@@ -1,11 +1,11 @@
 @define-color background-color #26173E;
-@define-color border-color rgba(255, 255, 76, 0.5);
+@define-color border-color rgba(218, 17, 201, 0.6);
 @define-color label #46FEEC;
-@define-color image #FFFF4C;
-@define-color progress #ED4BA8;
+@define-color image #DA11C9;
+@define-color progress #DA11C9;
 @define-color progress-trough rgba(40, 24, 125, 0.56);
-@define-color progress-outline rgba(40, 24, 125, 0.28);
-@define-color panel-tint rgba(2, 179, 241, 0.08);
+@define-color progress-outline rgba(218, 17, 201, 0.35);
+@define-color panel-tint rgba(218, 17, 201, 0.08);
 @define-color shadow rgba(38, 23, 62, 0.5);
 
 window:not(:backdrop),

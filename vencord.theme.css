@@ -8,7 +8,7 @@
 :root {
   --color00: #26173E;
   --color01: #ED4BA8;
-  --color02: #51E946;
+  --color02: #DA11C9;
   --color03: #EAE43E;
   --color04: #5A4ED6;
   --color05: #DA11C9;
@@ -16,7 +16,7 @@
   --color07: #46FEEC;
   --color08: #3D99CA;
   --color09: #ED4BA8;
-  --color10: #51E946;
+  --color10: #DA11C9;
   --color11: #FFFF4C;
   --color12: #5A4ED6;
   --color13: #B03DCE;
@@ -38,8 +38,8 @@
   --sm-pink-bright: #FFFF4C;
   --sm-pink-frost: color-mix(in srgb, var(--color01) 18%, transparent);
   --sm-pink-line: color-mix(in srgb, var(--color01) 38%, transparent);
-  --sm-green: #51E946;
-  --sm-green-bright: #51E946;
+  --sm-green: #DA11C9;
+  --sm-green-bright: #DA11C9;
   --sm-green-frost: color-mix(in srgb, var(--color02) 12%, transparent);
   --sm-green-line: color-mix(in srgb, var(--color06) 30%, transparent);
   --sm-cream: #FFFF4C;

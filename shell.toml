@@ -1,5 +1,5 @@
 # Cyberpunk Edgerunners Theme
-# Neon yellow leads focus and selection; dark purple void provides depth and contrast.
+# Neon fuchsia leads focus and borders; dark purple void provides depth and contrast.
 
 [bar]
 background       = "#26173E"
@@ -7,16 +7,16 @@ background-alpha = 0.20
 text             = "#46FEEC"
 placeholder      = "#3D99CA"
 scale-with-font  = true
-border           = "#FFFF4C"
+border           = "#DA11C9"
 border-active    = "hyprland.active-border"
 
 border-alpha     = 0.88
-active-border-foreground = "rgb(FFFF4C) rgb(ED4BA8) 45deg"
+active-border-foreground = "rgb(DA11C9) rgb(FFFF4C) 45deg"
 
 [controls]
 normal-color        = "#3D99CA"
 normal-fill-alpha   = 0.05
-normal-border       = "#FFFF4C"
+normal-border       = "#DA11C9"
 normal-border-width = 0
 normal-border-alpha = 0.0
 
@@ -26,15 +26,15 @@ hover-cursor-border       = "#28187D"
 hover-cursor-border-width = 0
 hover-cursor-border-alpha = 0.0
 
-focus-color        = "#FFFF4C"
+focus-color        = "#DA11C9"
 focus-fill-alpha   = 0.13
 focus-border       = "hyprland.active-border-foreground"
 focus-border-width = 1
 focus-border-alpha = 0.72
 
-selected-color        = "#FFFF4C"
+selected-color        = "#DA11C9"
 selected-fill-alpha   = 0.18
-selected-border       = "#ED4BA8"
+selected-border       = "#DA11C9"
 selected-border-width = "0 0 1 0"
 selected-border-alpha = 0.82
 
@@ -74,58 +74,58 @@ icon-large    = 19
 
 [popups]
 background       = "#26173E"
-background-alpha = 1.0
-text             = "#46FEEC"
-border           = "#FFFF4C"
-border-alpha     = 0.90
-border-width     = 2
-
-[tooltip]
-background       = "#26173E"
-background-alpha = 1.0
-text             = "#46FEEC"
-border           = "#51E946"
-border-alpha     = 0.68
-
-[notifications]
-background       = "#26173E"
-background-alpha = 1.0
+background-alpha = 0.96
 text             = "#46FEEC"
 border           = "hyprland.active-border"
 border-alpha     = 0.78
 border-width     = 2
-countdown        = "#51E946"
+
+[tooltip]
+background       = "#26173E"
+background-alpha = 0.96
+text             = "#46FEEC"
+border           = "#DA11C9"
+border-alpha     = 0.68
+
+[notifications]
+background       = "#26173E"
+background-alpha = 0.96
+text             = "#46FEEC"
+border           = "hyprland.active-border"
+border-alpha     = 0.78
+border-width     = 2
+countdown        = "#DA11C9"
 
 [launcher]
 background                = "#26173E"
-background-alpha          = 1.0
+background-alpha          = 0.96
 text                      = "#46FEEC"
-border                    = "#FFFF4C"
-border-alpha              = 0.90
+border                    = "hyprland.active-border"
+border-alpha              = 0.78
 border-width              = 2
 scrim                     = "#26173E"
-scrim-alpha               = 0.38
-selected-background       = "#FFFF4C"
-selected-background-alpha = 0.92
-selected-text             = "#26173E"
-selected-border           = "hyprland.active-border-foreground"
-selected-border-alpha     = 0.78
+scrim-alpha               = 0.45
+selected-background       = "#DA11C9"
+selected-background-alpha = 0.18
+selected-text             = "#FFFF4C"
+selected-border           = "#DA11C9"
+selected-border-alpha     = 0.75
 selected-border-width     = 1
 
 [menu]
 background                = "#26173E"
-background-alpha          = 1.0
+background-alpha          = 0.96
 text                      = "#46FEEC"
-border                    = "#FFFF4C"
-border-alpha              = 0.90
+border                    = "hyprland.active-border"
+border-alpha              = 0.78
 border-width              = 2
 scrim                     = "#26173E"
-scrim-alpha               = 0.38
-selected-background       = "#FFFF4C"
-selected-background-alpha = 0.92
-selected-text             = "#26173E"
-selected-border           = "hyprland.active-border-foreground"
-selected-border-alpha     = 0.74
+scrim-alpha               = 0.45
+selected-background       = "#DA11C9"
+selected-background-alpha = 0.18
+selected-text             = "#FFFF4C"
+selected-border           = "#DA11C9"
+selected-border-alpha     = 0.75
 selected-border-width     = 1
 
 [polkit]
@@ -138,7 +138,7 @@ border-error     = "#ED4BA8"
 border-alpha     = 0.88
 scrim            = "#26173E"
 scrim-alpha      = 0.66
-accent           = "#FFFF4C"
+accent           = "#DA11C9"
 
 [lock]
 background       = "#26173E"
@@ -146,11 +146,11 @@ background-alpha = 0.20
 text             = "#46FEEC"
 placeholder      = "#3D99CA"
 text-error       = "#ED4BA8"
-border           = "#FFFF4C"
+border           = "#DA11C9"
 border-active    = "hyprland.active-border"
 border-error     = "#ED4BA8"
 border-alpha     = 0.88
-selection        = "#FFFF4C"
+selection        = "#DA11C9"
 selection-alpha  = 0.40
 
 [image-picker]

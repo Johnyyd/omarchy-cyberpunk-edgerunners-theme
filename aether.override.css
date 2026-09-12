@@ -11,7 +11,7 @@
 
 @define-color black #26173E;
 @define-color red #ED4BA8;
-@define-color green #51E946;
+@define-color green #DA11C9;
 @define-color yellow #FFFF4C;
 @define-color blue #5A4ED6;
 @define-color magenta #DA11C9;
@@ -19,7 +19,7 @@
 @define-color white #46FEEC;
 @define-color bright_black #3D99CA;
 @define-color bright_red #ED4BA8;
-@define-color bright_green #51E946;
+@define-color bright_green #DA11C9;
 @define-color bright_yellow #FFFF4C;
 @define-color bright_blue #5A4ED6;
 @define-color bright_magenta #B03DCE;
@@ -31,7 +31,7 @@
 @define-color theme_fg_color @foreground;
 @define-color theme_base_color @background;
 @define-color theme_text_color @foreground;
-@define-color theme_selected_bg_color @yellow;
+@define-color theme_selected_bg_color @magenta;
 @define-color theme_selected_fg_color @background;
 @define-color insensitive_bg_color alpha(@background, 0.5);
 @define-color insensitive_fg_color alpha(@foreground, 0.5);
@@ -40,13 +40,13 @@
 @define-color theme_unfocused_fg_color @foreground;
 @define-color theme_unfocused_base_color @background;
 @define-color theme_unfocused_text_color @foreground;
-@define-color theme_unfocused_selected_bg_color @yellow;
+@define-color theme_unfocused_selected_bg_color @magenta;
 @define-color theme_unfocused_selected_fg_color @background;
 
 /* Adwaita Color Overrides */
-@define-color accent_bg_color @yellow;
+@define-color accent_bg_color @magenta;
 @define-color accent_fg_color @background;
-@define-color accent_color @yellow;
+@define-color accent_color @magenta;
 
 @define-color window_bg_color @background;
 @define-color window_fg_color @foreground;
