@@ -31,7 +31,7 @@ Restore previous configuration at any time with:
 To install directly from the remote git repository:
 
 ```bash
-omarchy-theme-install https://github.com/Johnyyd/omarchy-cyperpunk-edgerunners-theme
+omarchy-theme-install https://github.com/Johnyyd/omarchy-cyberpunk-edgerunners-theme
 ```
 
 ## What's Included
@@ -62,7 +62,7 @@ omarchy-theme-install https://github.com/Johnyyd/omarchy-cyperpunk-edgerunners-t
   <tr>
     <td><img src="backgrounds/04-lucy.jpg" width="220" alt="Lucy"></td>
     <td><img src="backgrounds/05-lucy.jpg" width="220" alt="Lucy"></td>
-    <td><img src="backgrounds/06-cyperpunk-edgerunners.jpg" width="220" alt="Cyberpunk Edgerunners"></td>
+    <td><img src="backgrounds/06-cyberpunk-edgerunners.jpg" width="220" alt="Cyberpunk Edgerunners"></td>
   </tr>
   <tr>
     <td><img src="backgrounds/07-night-city.jpg" width="220" alt="Night City"></td>
