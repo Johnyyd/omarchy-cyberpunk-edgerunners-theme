@@ -3,7 +3,7 @@
 
 [bar]
 background       = "#26173E"
-background-alpha = 0.20
+background-alpha = 0.85
 text             = "#46FEEC"
 placeholder      = "#3D99CA"
 scale-with-font  = true

@@ -5,7 +5,7 @@
 @define-color fire #DA11C9;
 @define-color yellow #FFFF4C;
 @define-color panel-tint rgba(218, 17, 201, 0.08);
-@define-color panel alpha(@background, 0.4);
+@define-color panel alpha(@background, 0.85);
 
 window#waybar {
     background: #26173E;
