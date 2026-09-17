@@ -2,7 +2,13 @@
 
 # 1. PATH RESOLUTION: Get the absolute path of the directory containing this script
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
-DEFAULT_LOGO="$SCRIPT_DIR/fastfetch-logo.png"
+THEME_LOGO="$HOME/.config/omarchy/themes/cyberpunk-edgerunners/fastfetch-logo.png"
+
+if [[ -f "$THEME_LOGO" ]]; then
+    DEFAULT_LOGO="$THEME_LOGO"
+else
+    DEFAULT_LOGO="$SCRIPT_DIR/fastfetch-logo.png"
+fi
 
 CONFIG_DIR="$HOME/.config/fastfetch"
 CONFIG_FILE="$CONFIG_DIR/config.jsonc"
@@ -10,16 +16,19 @@ CONFIG_FILE="$CONFIG_DIR/config.jsonc"
 echo "=== FASTFETCH LOGO CONFIGURATOR ==="
 
 # 2. HANDLE USER INPUT
-read -p "Enter the absolute path to the logo image (leave blank to use default): " USER_INPUT
-
-# If the user leaves it blank, assign the default file
-if [[ -z "$USER_INPUT" ]]; then
+LOGO_PATH=""
+if [[ "${1:-}" == "-y" || "${1:-}" == "--default" || ! -t 0 ]]; then
     LOGO_PATH="$DEFAULT_LOGO"
-    echo "[-] Using default logo: $LOGO_PATH"
+    echo "[-] Auto-selecting default logo: $LOGO_PATH"
 else
-    # Support the tilde (~) expansion for /home/username
-    LOGO_PATH="${USER_INPUT/#\~/$HOME}"
-    echo "[-] Using custom logo: $LOGO_PATH"
+    read -p "Enter the absolute path to the logo image (leave blank to use default): " USER_INPUT
+    if [[ -z "$USER_INPUT" ]]; then
+        LOGO_PATH="$DEFAULT_LOGO"
+        echo "[-] Using default logo: $LOGO_PATH"
+    else
+        LOGO_PATH="${USER_INPUT/#\~/$HOME}"
+        echo "[-] Using custom logo: $LOGO_PATH"
+    fi
 fi
 
 # 3. DATA INTEGRITY CHECK
@@ -38,7 +47,6 @@ if [[ -f "$CONFIG_FILE" ]]; then
 fi
 
 # 5. GENERATE NEW CONFIGURATION
-# Use Here-Doc to write the JSONC block into the new file
 cat << EOF > "$CONFIG_FILE"
 {
   "\$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
@@ -54,7 +62,12 @@ cat << EOF > "$CONFIG_FILE"
     }
   },
   "display": {
-    "separator": "  "
+    "separator": "  ",
+    "color": {
+      "separator": "bright_cyan",
+      "keys": "bright_magenta",
+      "title": "bright_yellow"
+    }
   },
   "modules": [
     "title",

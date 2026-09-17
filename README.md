@@ -48,10 +48,27 @@ omarchy-theme-install https://github.com/Johnyyd/omarchy-cyberpunk-edgerunners-t
   - **Numbers & Constants**: `#EAE43E` (Acid Lime Yellow)
   - **Comments & Documentation**: `#3D99CA` (Steel Blue)
 - **Editors & TUIs**: Native configurations for Neovim (`aether.nvim` v3 with LazyVim), Helix, Zed, Pi, and Claude CLI.
+- **Fastfetch**: Custom Cyberpunk Edgerunners logo with neon fuchsia, yellow, and electric cyan color accents (`fastfetch.jsonc`).
 - **Desktop Integrations**: Styled layouts for Waybar, Mako, Walker, SwayOSD, and Hyprlock.
 - **Vencord Theme**: Standalone [Vencord theme](vencord.theme.css) with custom layered treatment for Discord.
 
+### Fastfetch Theme Setup
+
+Apply the Cyberpunk Edgerunners logo and color scheme to Fastfetch:
+
+```bash
+./install-fastfetch-logo.sh
+```
+
+To restore your previous Fastfetch configuration or system default:
+
+```bash
+./uninstall-fastfetch-logo.sh
+```
+
 ## Wallpapers
+
+### Static Wallpapers
 
 <table>
   <tr>
@@ -71,7 +88,21 @@ omarchy-theme-install https://github.com/Johnyyd/omarchy-cyberpunk-edgerunners-t
   </tr>
 </table>
 
+### Live Wallpapers (.mp4)
+
+The theme includes 4 animated video wallpapers located in `backgrounds/`:
+
+- `david-x-lucy-neon-afterglow-cyberpunk-edgerunners-moewalls-com.mp4` (David & Lucy Neon Afterglow)
+- `lucy-and-david-sitting-on-the-moon-cyberpunk-edgerunners-moewalls-com.mp4` (David & Lucy on the Moon)
+- `lucyna-astronaut-cyberpunk-edgerunners-moewalls-com.mp4` (Lucyna Astronaut)
+- `lucy-x-rebecca-wuthering-waves-x-cyberpunk-edgerunners-moewalls-com.mp4` (Lucy & Rebecca)
+
+These looping video wallpapers are directly compatible with the [Omarchy Live Wallpaper plugin](https://github.com/yesheytenzin/live-wallpaper). Once the plugin is installed:
+1. Open **Style → Background** (or double-click an empty area on your desktop).
+2. Select any video preview to start playback immediately.
+
 ## Requirements
 
 - Omarchy 4.0 (Quattro) for native shell and Hyprland Lua treatment
 - `Yaru-magenta` icon theme
+
