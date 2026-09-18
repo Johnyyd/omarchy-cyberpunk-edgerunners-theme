@@ -84,7 +84,7 @@ To restore your previous Fastfetch configuration or system default:
   <tr>
     <td><img src="backgrounds/07-night-city.jpg" width="220" alt="Night City"></td>
     <td><img src="backgrounds/08-david.jpg" width="220" alt="David Martinez"></td>
-    <td><img src="backgrounds/09-egderunners.jpg" width="220" alt="Edgerunners"></td>
+    <td><img src="backgrounds/09-edgerunners.jpg" width="220" alt="Edgerunners"></td>
   </tr>
 </table>
 

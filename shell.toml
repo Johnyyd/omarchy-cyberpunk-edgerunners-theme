@@ -33,9 +33,9 @@ focus-border       = "hyprland.active-border-foreground"
 focus-border-width = 1
 focus-border-alpha = 0.72
 
-selected-color        = "#FFFF00"
+selected-color        = "#46FEEC"
 selected-fill-alpha   = 0.18
-selected-border       = "#FFFF00"
+selected-border       = "#46FEEC"
 selected-border-width = "0 0 1 0"
 selected-border-alpha = 0.82
 
@@ -95,7 +95,7 @@ text             = "#46FEEC"
 border           = "hyprland.active-border"
 border-alpha     = 0.78
 border-width     = 2
-countdown        = "#FFFF00"
+countdown        = "#46FEEC"
 
 [launcher]
 background                = "#26173E"
@@ -106,10 +106,10 @@ border-alpha              = 0.78
 border-width              = 2
 scrim                     = "#26173E"
 scrim-alpha               = 0.45
-selected-background       = "#FFFF00"
+selected-background       = "#46FEEC"
 selected-background-alpha = 0.18
-selected-text             = "#ED4BA8ff"
-selected-border           = "#FFFF00"
+selected-text             = "#ED4BA8"
+selected-border           = "#46FEEC"
 selected-border-alpha     = 0.75
 selected-border-width     = 1
 
@@ -122,10 +122,10 @@ border-alpha              = 0.78
 border-width              = 2
 scrim                     = "#26173E"
 scrim-alpha               = 0.45
-selected-background       = "#FFFF00"
+selected-background       = "#46FEEC"
 selected-background-alpha = 0.18
-selected-text             = "#ED4BA8ff"
-selected-border           = "#FFFF00"
+selected-text             = "#ED4BA8"
+selected-border           = "#46FEEC"
 selected-border-alpha     = 0.75
 selected-border-width     = 1
 
@@ -151,7 +151,7 @@ border           = "#DA11C9"
 border-active    = "hyprland.active-border"
 border-error     = "#ED4BA8"
 border-alpha     = 0.88
-selection        = "#FFFF00"
+selection        = "#46FEEC"
 selection-alpha  = 0.40
 
 [image-picker]
@@ -160,5 +160,5 @@ scrim-alpha             = 0.66
 text                    = "#46FEEC"
 selected-border         = "hyprland.active-border"
 selected-border-alpha   = 1.0
-unselected-border       = "#FFFF00"
+unselected-border       = "#46FEEC"
 unselected-border-alpha = 0.42

@@ -26,8 +26,8 @@
   @define-color background #26173E;
   @define-color foreground #46FEEC;
   @define-color accent #DA11C9;
-  @define-color selection_bg #FFFF00;
-  @define-color selection_fg #ED4BA8ff;
+  @define-color selection_bg #46FEEC;
+  @define-color selection_fg #ED4BA8;
   @define-color cursor #FFFF4C;
   @define-color green #1BD7F8;
   @define-color yellow #FFFF4C;
