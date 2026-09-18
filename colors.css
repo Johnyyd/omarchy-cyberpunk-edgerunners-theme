@@ -1,6 +1,7 @@
 /*
-   * Cyberpunk Edgerunners shared CSS color variables.
-   * Primary names: color0-color15 (matches colors.toml)
+ * Cyberpunk Edgerunners shared CSS color variables.
+ * Generated from colors.toml — DO NOT EDIT DIRECTLY
+ * Source of truth: colors.toml
 */
 
   /* ANSI palette */
@@ -15,7 +16,7 @@
   @define-color color8 #3D99CA;
   @define-color color9 #ED4BA8;
   @define-color color10 #1BD7F8;
-  @define-color color11 #FFFF4C;
+  @define-color color11 #FFFF00;
   @define-color color12 #5A4ED6;
   @define-color color13 #B03DCE;
   @define-color color14 #1BD7F8;
@@ -25,8 +26,8 @@
   @define-color background #26173E;
   @define-color foreground #46FEEC;
   @define-color accent #DA11C9;
-  @define-color selection_bg #DA11C9;
-  @define-color selection_fg #26173E;
+  @define-color selection_bg #FFFF00;
+  @define-color selection_fg #ED4BA8ff;
   @define-color cursor #FFFF4C;
   @define-color green #1BD7F8;
   @define-color yellow #FFFF4C;
