@@ -10,7 +10,13 @@ COLORS_TOML="$REPO_DIR/colors.toml"
 # Extract colors from colors.toml
 get_color() {
     local key="$1"
-    grep -E "^${key}\s*=" "$COLORS_TOML" | head -1 | sed -E 's/.*=\s*"?([^"]+)"?/\1/'
+    local value
+    value=$(grep -E "^${key}\s*=" "$COLORS_TOML" | head -1 | sed -E 's/.*=\s*"?([^"]+)"?/\1/')
+    if [[ -z "$value" ]]; then
+        echo "❌ Error: Color '$key' not found in $COLORS_TOML" >&2
+        exit 1
+    fi
+    echo "$value"
 }
 
 echo "🔧 Building Cyberpunk Edgerunners theme from $COLORS_TOML"
@@ -238,7 +244,7 @@ done
 if [ $FAILED -eq 0 ]; then
     echo ""
     echo "🎉 Build successful! All files synced to colors.toml palette."
-    echo "   Selection color: $SEL_BG (Cyberpunk Yellow)"
+    echo "   Selection color: $SEL_BG (Cyberpunk Cyan)"
     echo "   Accent color: $ACCENT (Lucy Hot Pink)"
 else
     echo ""
