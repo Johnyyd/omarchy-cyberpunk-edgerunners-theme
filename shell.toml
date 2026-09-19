@@ -34,10 +34,11 @@ focus-border-width = 1
 focus-border-alpha = 0.72
 
 selected-color        = "#ED4BA8"
-selected-fill-alpha   = 0.18
+selected-fill-alpha   = 0.35
 selected-border       = "#ED4BA8"
 selected-border-width = "0 0 1 0"
 selected-border-alpha = 0.82
+selected-text             = "#FFFF4C"
 
 pressed-fill-alpha   = 0.24
 selection-fill-alpha = 0.34
