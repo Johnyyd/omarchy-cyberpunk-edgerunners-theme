@@ -4,6 +4,8 @@
 @define-color accent #DA11C9;
 @define-color fire #DA11C9;
 @define-color yellow #FFFF4C;
+@define-color red #FF003C;
+@define-color critical #FF003C;
 @define-color panel-tint rgba(218, 17, 201, 0.08);
 @define-color panel alpha(@background, 0.85);
 
@@ -27,6 +29,13 @@ window#waybar {
 #custom-launcher,
 #window {
     color: @accent;
+}
+
+#battery.critical:not(.charging),
+#temperature.critical,
+#cpu.critical,
+#memory.critical {
+    color: @critical;
 }
 
 /* Opaque popups, menus, and tooltips */

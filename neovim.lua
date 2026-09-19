@@ -17,7 +17,7 @@ return {
         bright_fg = "#46FEEC",
         muted = "#3D99CA",
 
-        red = "#DA11C9",
+        red = "#FF003C",
         yellow = "#FFFF4C",
         orange = "#FFFF4C",
         green = "#1BD7F8",
@@ -26,7 +26,7 @@ return {
         magenta = "#DA11C9",
         brown = "#94007A",
 
-        bright_red = "#DA11C9",
+        bright_red = "#FF003C",
         bright_yellow = "#FFFF4C",
         bright_green = "#1BD7F8",
         bright_cyan = "#02B3F1",

@@ -244,7 +244,7 @@ done
 if [ $FAILED -eq 0 ]; then
     echo ""
     echo "🎉 Build successful! All files synced to colors.toml palette."
-    echo "   Selection color: $SEL_BG (Cyberpunk Cyan)"
+    echo "   Selection color: $SEL_BG (Lucy Hot Pink)"
     echo "   Accent color: $ACCENT (Lucy Hot Pink)"
 else
     echo ""

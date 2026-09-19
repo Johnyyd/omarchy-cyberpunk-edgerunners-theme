@@ -53,7 +53,8 @@ The theme is built strictly from the 15 Cyberpunk Edgerunners palette colors:
 | `#51E946` | Toxic Neon Green | Green / Strings | String literals, additions, success notifications |
 | `#EAE43E` | Acid Lime Yellow | Yellow / Numbers | Numeric literals, warnings, secondary functions |
 | `#FFFF4C` | Cyberpunk Yellow | Primary Accent / Highlight | Active borders, selections, cursors, function names |
-| `#ED4BA8` | Lucy Hot Pink | Red / Keywords | Keywords, control flow, critical errors, active UI |
+| `#ED4BA8` | Lucy Hot Pink | Keywords / Selection | Selections, keywords, control flow, active UI |
+| `#FF003C` | Cyberpunk Neon Crimson | Red / Critical Alerts | Critical notifications, error markers, lock & polkit failures, ANSI Red |
 | `#DA11C9` | Vivid Neon Fuchsia | Magenta | Operators, markdown headings, special tags |
 | `#B03DCE` | Neon Orchid | Bright Magenta / Types | Types, classes, interfaces, enums |
 
