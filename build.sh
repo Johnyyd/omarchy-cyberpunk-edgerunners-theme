@@ -218,7 +218,69 @@ sed -i \
 
 echo "✅ Updated hyprland-preview-share-picker.css"
 
-# 7. Validate all files have consistent selection color
+# 7. Process terminal template files (copy and substitute, don't modify originals)
+template_files=(kitty.conf.tpl ghostty.conf.tpl foot.ini.tpl alacritty.toml.tpl)
+
+for tpl in "${template_files[@]}"; do
+    tpl_path="$REPO_DIR/$tpl"
+    if [[ -f "$tpl_path" ]]; then
+        # Determine output filename (remove .tpl extension)
+        output_name="${tpl%.tpl}"
+        output_path="$REPO_DIR/$output_name"
+
+        # Copy template and substitute variables
+        cp "$tpl_path" "$output_path"
+
+        # Replace variables in the copied file
+        sed -i \
+            -e "s/{{ background }}/$BG/g" \
+            -e "s/{{ foreground }}/$FG/g" \
+            -e "s/{{ accent }}/$ACCENT/g" \
+            -e "s/{{ cursor }}/$CURSOR/g" \
+            -e "s/{{ selection_background }}/$SEL_BG/g" \
+            -e "s/{{ selection_foreground }}/$SEL_FG/g" \
+            -e "s/{{ muted }}/$MUTED/g" \
+            -e "s/{{ bright_foreground }}/$FG/g" \
+            -e "s/{{ bright_red }}/$RED/g" \
+            -e "s/{{ bright_green }}/$GREEN/g" \
+            -e "s/{{ bright_yellow }}/$COLOR11/g" \
+            -e "s/{{ bright_blue }}/$BLUE/g" \
+            -e "s/{{ bright_magenta }}/$COLOR13/g" \
+            -e "s/{{ bright_cyan }}/$COLOR14/g" \
+            -e "s/{{ red }}/$RED/g" \
+            -e "s/{{ green }}/$GREEN/g" \
+            -e "s/{{ yellow }}/$YELLOW/g" \
+            -e "s/{{ blue }}/$BLUE/g" \
+            -e "s/{{ magenta }}/$MAGENTA/g" \
+            -e "s/{{ cyan }}/$CYAN/g" \
+            -e "s/{{ orange }}/$ORANGE/g" \
+            -e "s/{{ brown }}/$BROWN/g" \
+            -e "s/{{ dark_fg }}/$DARK_FG/g" \
+            -e "s/{{ color0 }}/$COLOR0/g" \
+            -e "s/{{ color1 }}/$COLOR1/g" \
+            -e "s/{{ color2 }}/$COLOR2/g" \
+            -e "s/{{ color3 }}/$COLOR3/g" \
+            -e "s/{{ color4 }}/$COLOR4/g" \
+            -e "s/{{ color5 }}/$COLOR5/g" \
+            -e "s/{{ color6 }}/$COLOR6/g" \
+            -e "s/{{ color7 }}/$COLOR7/g" \
+            -e "s/{{ color8 }}/$COLOR8/g" \
+            -e "s/{{ color9 }}/$COLOR9/g" \
+            -e "s/{{ color10 }}/$COLOR10/g" \
+            -e "s/{{ color11 }}/$COLOR11/g" \
+            -e "s/{{ color12 }}/$COLOR12/g" \
+            -e "s/{{ color13 }}/$COLOR13/g" \
+            -e "s/{{ color14 }}/$COLOR14/g" \
+            -e "s/{{ color15 }}/$COLOR15/g" \
+            "$output_path"
+
+        echo "  ✅ Generated $output_name from $tpl"
+    fi
+done
+
+echo "✅ Generated terminal config files from templates"
+
+# 8. Validate all files have consistent selection color
 echo ""
 echo "🔍 Validating selection color consistency..."
 SEL_BG_NO_HASH="${SEL_BG#\#}"
@@ -231,7 +293,11 @@ for file in \
     "$REPO_DIR/helix.toml" \
     "$REPO_DIR/obsidian.css" \
     "$REPO_DIR/hyprland-preview-share-picker.css" \
-    "$REPO_DIR/shell.toml"
+    "$REPO_DIR/shell.toml" \
+    "$REPO_DIR/kitty.conf" \
+    "$REPO_DIR/ghostty.conf" \
+    "$REPO_DIR/foot.ini" \
+    "$REPO_DIR/alacritty.toml"
 do
     if grep -q "$SEL_BG_NO_HASH" "$file" 2>/dev/null; then
         echo "  ✅ $file"

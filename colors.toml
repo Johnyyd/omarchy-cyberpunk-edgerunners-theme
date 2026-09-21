@@ -34,11 +34,6 @@ color13 = "#B03DCE"
 color14 = "#1BD7F8"
 color15 = "#46FEEC"
 
-# Audio visualizer / spectrum tiers
-green = "#1BD7F8"
-yellow = "#FFFF4C"
-red = "#FF003C"
-
 
 # Omarchy 4 semantic palette roles. Keep these aligned with color0-color15.
 mode = "dark"
@@ -53,7 +48,7 @@ light_fg = "#46FEEC"
 soft_fg = "#02B3F1"
 bright_fg = "#46FEEC"
 red = "#FF003C"
-green = "#DA11C9"
+green = "#1BD7F8"
 yellow = "#EAE43E"
 blue = "#5A4ED6"
 magenta = "#DA11C9"
@@ -63,12 +58,8 @@ brown = "#94007A"
 dark_bg = "#26173E"
 darker_bg = "#26173E"
 bright_red = "#FF003C"
-bright_green = "#DA11C9"
+bright_green = "#1BD7F8"
 bright_yellow = "#FFFF00"
 bright_blue = "#5A4ED6"
 bright_magenta = "#B03DCE"
 bright_cyan = "#1BD7F8"
-
-# Quattro shares these gradients between Hyprland and shell surfaces.
-hyprland_active_border = "rgba(DA11C9ff) rgba(FFFF4Cee) rgba(1BD7F8cc) 45deg"
-hyprland_inactive_border = "rgba(28187D99)"

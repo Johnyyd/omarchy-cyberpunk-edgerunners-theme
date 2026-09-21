@@ -23,3 +23,7 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+TODO_FIXES.md
+fix_plan.md
+test_validation.sh
+test_tdd.sh

@@ -18,7 +18,7 @@ return {
         muted = "#3D99CA",
 
         red = "#FF003C",
-        yellow = "#FFFF4C",
+        yellow = "#EAE43E",
         orange = "#FFFF4C",
         green = "#1BD7F8",
         cyan = "#02B3F1",
