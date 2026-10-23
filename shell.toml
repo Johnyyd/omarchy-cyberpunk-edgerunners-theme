@@ -25,7 +25,7 @@ hover-cursor-fill-alpha   = 0.10
 hover-cursor-border       = "#28187D"
 hover-cursor-border-width = 0
 hover-cursor-border-alpha = 0.0
-hover-text                 = "#ED4BA8ff"
+hover-text                 = "#FF003C"
 
 focus-color        = "#DA11C9"
 focus-fill-alpha   = 0.13

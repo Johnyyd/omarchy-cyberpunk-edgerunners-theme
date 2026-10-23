@@ -22,7 +22,7 @@ foreground = "{{ background }}"
 background = "{{ red }}"
 
 [colors.footer_bar]
-foreground = "{{ background }}"
+foreground = "{{ red }}"
 background = "{{ foreground }}"
 
 [colors.selection]

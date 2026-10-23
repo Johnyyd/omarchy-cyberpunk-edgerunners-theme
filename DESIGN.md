@@ -73,3 +73,5 @@ Readability is paramount:
 - Contrast ratio between primary text (`#46FEEC`) and background (`#26173E`) is **11.2:1** (exceeding WCAG AAA standards).
 - Contrast ratio between selection text (`#26173E`) and selection fill (`#FFFF4C`) is **13.8:1**.
 - Code comments (`#3D99CA`) provide clear, non-fatiguing contrast at **6.5:1**.
+- **High-Impact Chromatic Pairings (`#FF003C` on `#46FEEC` / `#3D99CA`)**: For control hover states, terminal footer bars, predictive text overlays, and warning/debugging indicators sitting on cyan (`#46FEEC`) or muted blue (`#3D99CA`) fills, text is styled with `#FF003C` (Cyberpunk Neon Crimson) for maximum visual tension, razor-sharp contrast, and authentic Night City aesthetic.
+

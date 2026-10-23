@@ -22,7 +22,7 @@ foreground = "#26173E"
 background = "#FF003C"
 
 [colors.footer_bar]
-foreground = "#26173E"
+foreground = "#FF003C"
 background = "#46FEEC"
 
 [colors.selection]
