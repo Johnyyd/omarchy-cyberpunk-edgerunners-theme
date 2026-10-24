@@ -16,6 +16,7 @@
 --lucy-hot-pink: #ED4BA8ff;
 --vivid-neon-fuchsia: #DA11C9ff;
 --neon-orchid: #B03DCEff;
+--cyberpunk-neon-crimson: #FF003Cff;
 
 /* CSS HSL */
 --night-void: hsla(263, 46%, 17%, 1);
@@ -33,6 +34,7 @@
 --lucy-hot-pink: hsla(326, 82%, 61%, 1);
 --vivid-neon-fuchsia: hsla(305, 86%, 46%, 1);
 --neon-orchid: hsla(288, 60%, 52%, 1);
+--cyberpunk-neon-crimson: hsla(346, 100%, 50%, 1);
 
 /* SCSS HEX */
 $night-void: #26173Eff;
@@ -50,6 +52,7 @@ $cyberpunk-yellow: #FFFF4Cff;
 $lucy-hot-pink: #ED4BA8ff;
 $vivid-neon-fuchsia: #DA11C9ff;
 $neon-orchid: #B03DCEff;
+$cyberpunk-neon-crimson: #FF003Cff;
 
 /* SCSS HSL */
 $night-void: hsla(263, 46%, 17%, 1);
@@ -67,6 +70,7 @@ $cyberpunk-yellow: hsla(60, 100%, 65%, 1);
 $lucy-hot-pink: hsla(326, 82%, 61%, 1);
 $vivid-neon-fuchsia: hsla(305, 86%, 46%, 1);
 $neon-orchid: hsla(288, 60%, 52%, 1);
+$cyberpunk-neon-crimson: hsla(346, 100%, 50%, 1);
 
 /* SCSS RGB */
 $night-void: rgba(38, 23, 62, 1);
@@ -84,6 +88,7 @@ $cyberpunk-yellow: rgba(255, 255, 76, 1);
 $lucy-hot-pink: rgba(237, 75, 168, 1);
 $vivid-neon-fuchsia: rgba(218, 17, 201, 1);
 $neon-orchid: rgba(176, 61, 206, 1);
+$cyberpunk-neon-crimson: rgba(255, 0, 60, 1);
 
 /* Syntax roles */
 $syntax-keyword: $lucy-hot-pink;

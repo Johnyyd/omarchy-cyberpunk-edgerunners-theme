@@ -6,6 +6,7 @@
 @define-color progress-trough rgba(40, 24, 125, 0.56);
 @define-color progress-outline rgba(218, 17, 201, 0.35);
 @define-color panel-tint rgba(218, 17, 201, 0.08);
+@define-color critical #FF003C;
 @define-color shadow rgba(38, 23, 62, 0.5);
 
 window:not(:backdrop),
@@ -48,4 +49,15 @@ progressbar trough {
 progressbar progress {
     background-color: @progress;
     border-radius: 999px;
+}
+
+image.muted,
+image:disabled,
+image.capslock {
+    color: @critical;
+}
+
+progressbar:disabled progress,
+progressbar.muted progress {
+    background-color: @critical;
 }

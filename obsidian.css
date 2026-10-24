@@ -37,8 +37,8 @@
   --code-normal: #1BD7F8;
 
   /* Errors and success */
-  --text-error: #ED4BA8;
-  --text-error-hover: #DA11C9;
+  --text-error: #FF003C;
+  --text-error-hover: #FF003C;
   --text-success: #DA11C9;
 
   /* Tags */

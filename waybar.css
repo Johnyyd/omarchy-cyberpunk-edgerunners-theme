@@ -34,7 +34,10 @@ window#waybar {
 #battery.critical:not(.charging),
 #temperature.critical,
 #cpu.critical,
-#memory.critical {
+#memory.critical,
+#workspaces button.urgent,
+#pulseaudio.muted,
+#pulseaudio.source-muted {
     color: @critical;
 }
 
