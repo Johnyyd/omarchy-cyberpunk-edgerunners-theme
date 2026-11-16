@@ -27,3 +27,11 @@ TODO_FIXES.md
 fix_plan.md
 test_validation.sh
 test_tdd.sh
+
+# Accidental commits
+claude.json
+
+# Unreferenced/unfinished files
+chromium.theme
+keyboard.rgb
+icons.theme

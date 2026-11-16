@@ -7,7 +7,7 @@ theme[main_fg]="#46FEEC"
 # Title color for boxes
 theme[title]="#FFFF4C"
 
-# Highlight color for keyboard shortcuts
+# Highlight color for keyboard shortcuts (Lucy Hot Pink per design)
 theme[hi_fg]="#ED4BA8"
 
 # Background color of selected item in processes box
@@ -59,5 +59,5 @@ theme[download_mid]="#02B3F1"
 theme[download_end]="#46FEEC"
 
 theme[upload_start]="#28187D"
-theme[upload_mid]="#ED4BA8"
+theme[upload_mid]="#DA11C9"
 theme[upload_end]="#FFFF4C"

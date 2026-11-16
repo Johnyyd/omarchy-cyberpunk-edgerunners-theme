@@ -14,9 +14,9 @@
   "display": {
     "separator": "  ",
     "color": {
-      "separator": "bright_cyan",
-      "keys": "bright_magenta",
-      "title": "bright_yellow"
+      "separator": "#02B3F1",
+      "keys": "#DA11C9",
+      "title": "#FFFF4C"
     }
   },
   "modules": [

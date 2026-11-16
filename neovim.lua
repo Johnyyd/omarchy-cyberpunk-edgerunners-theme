@@ -29,9 +29,9 @@ return {
         bright_red = "#FF003C",
         bright_yellow = "#FFFF4C",
         bright_green = "#1BD7F8",
-        bright_cyan = "#02B3F1",
+        bright_cyan = "#1BD7F8",
         bright_blue = "#5A4ED6",
-        bright_magenta = "#DA11C9",
+        bright_magenta = "#B03DCE",
 
         accent = "#DA11C9",
         cursor = "#FFFF4C",

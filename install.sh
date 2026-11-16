@@ -47,7 +47,7 @@ if [[ -e $theme_dir || -L $theme_dir ]]; then
   mv -- "$theme_dir" "$backup_dir/theme"
 fi
 
-template_files=(kitty.conf.tpl alacritty.toml.tpl ghostty.conf.tpl foot.ini.tpl)
+template_files=(kitty.conf.tpl alacritty.toml.tpl ghostty.conf.tpl foot.ini.tpl btop.theme.tpl mako.ini.tpl hyprlock.conf.tpl swayosd.css.tpl fastfetch.jsonc.tpl gum_env.lua.tpl cava_theme.tpl shell.toml.tpl neovim.lua.tpl)
 
 for tpl in "${template_files[@]}"; do
   tpl_path="$template_dir/$tpl"
@@ -57,7 +57,19 @@ for tpl in "${template_files[@]}"; do
 done
 
 mkdir -p "$theme_dir" "$template_dir"
-cp -a "$repo_dir/." "$theme_dir/"
+
+# Copy runtime config files (exclude sources, docs, scripts, build artifacts)
+# Exclusion patterns: .git*, *.md, *.sh, *.tpl, colors.toml, preview*.png, LICENSE
+# backgrounds/ is INCLUDED for wallpapers
+rsync -a \
+  --exclude='.git*' \
+  --exclude='*.md' \
+  --exclude='*.sh' \
+  --exclude='*.tpl' \
+  --exclude='preview*.png' \
+  --exclude='LICENSE' \
+  --exclude='*.bak' \
+  "$repo_dir/" "$theme_dir/"
 
 for tpl in "${template_files[@]}"; do
   if [[ -f "$repo_dir/$tpl" ]]; then
@@ -86,7 +98,7 @@ cp -- "$repo_dir/vscode-theme.json" "$runtime_theme_dir/vscode-theme.json"
 omarchy-theme-set-vscode 2>/dev/null || true
 
 # Sync transparent terminal and monitor configs to runtime
-for conf in kitty.conf alacritty.toml ghostty.conf foot.ini btop.theme; do
+for conf in kitty.conf alacritty.toml ghostty.conf foot.ini btop.theme mako.ini hyprlock.conf swayosd.css fastfetch.jsonc gum_env.lua cava_theme shell.toml neovim.lua; do
   if [[ -f "$repo_dir/$conf" ]]; then
     cp -- "$repo_dir/$conf" "$runtime_theme_dir/$conf"
   fi

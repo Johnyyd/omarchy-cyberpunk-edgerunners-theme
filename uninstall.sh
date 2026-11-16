@@ -26,13 +26,18 @@ fi
 backup_dir=$(<"$latest_file")
 [[ -d $backup_dir ]] || { echo "Backup is missing: $backup_dir" >&2; exit 1; }
 
+# Restore runtime theme configs (terminal configs synced by install.sh)
+for conf in kitty.conf alacritty.toml ghostty.conf foot.ini btop.theme mako.ini hyprlock.conf swayosd.css fastfetch.jsonc gum_env.lua cava_theme shell.toml neovim.lua; do
+  rm -f -- "$runtime_theme_dir/$conf"
+done
+
 rm -rf -- "$theme_dir"
 if [[ -e $backup_dir/theme || -L $backup_dir/theme ]]; then
   mkdir -p "$(dirname -- "$theme_dir")"
   mv -- "$backup_dir/theme" "$theme_dir"
 fi
 
-template_files=(kitty.conf.tpl alacritty.toml.tpl ghostty.conf.tpl foot.ini.tpl)
+template_files=(kitty.conf.tpl alacritty.toml.tpl ghostty.conf.tpl foot.ini.tpl btop.theme.tpl mako.ini.tpl hyprlock.conf.tpl swayosd.css.tpl fastfetch.jsonc.tpl gum_env.lua.tpl cava_theme.tpl shell.toml.tpl neovim.lua.tpl)
 for tpl in "${template_files[@]}"; do
   tpl_path="$HOME/.config/omarchy/themed/$tpl"
   rm -f -- "$tpl_path"

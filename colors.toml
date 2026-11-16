@@ -1,52 +1,51 @@
-# Accent and UI colors
-accent = "#DA11C9"
-active_border_color = "#DA11C9"
-active_tab_background = "#DA11C9"
+# Cyberpunk Edgerunners - Source of Truth Palette
+# All derived configs are generated from this file via build.sh
 
-# Cursor colors
-cursor = "#FFFF4C"
-
-# Primary colors
-foreground = "#46FEEC"
-background = "#26173E"
-
-# Selection colors
-selection_foreground = "#FFFF4C"
-selection_background = "#ED4BA8"
-
-# Normal colors (ANSI 0-7)
-color0 = "#26173E"
-color1 = "#FF003C"
-color2 = "#1BD7F8"
-color3 = "#EAE43E"
-color4 = "#5A4ED6"
-color5 = "#DA11C9"
-color6 = "#02B3F1"
-color7 = "#46FEEC"
-
-# Bright colors (ANSI 8-15)
-color8 = "#3D99CA"
-color9 = "#FF003C"
-color10 = "#1BD7F8"
-color11 = "#FFFF00"
-color12 = "#5A4ED6"
-color13 = "#B03DCE"
-color14 = "#1BD7F8"
-color15 = "#46FEEC"
-
-
-# Omarchy 4 semantic palette roles. Keep these aligned with color0-color15.
 mode = "dark"
-bg = "#26173E"
+
+# Core palette (ANSI 0-15 + semantic aliases)
+# Night Void base
+color0 = "#26173E"        # background / black
+color8 = "#3D99CA"        # bright_black / muted / steel blue
+
+# Cyberpunk Neon Crimson (Red)
+color1 = "#FF003C"        # red / error / critical
+color9 = "#FF003C"        # bright_red
+
+# Vivid Electric Cyan (Green in ANSI, but cyan visually)
+color2 = "#1BD7F8"        # green / success / strings
+color10 = "#1BD7F8"       # bright_green
+
+# Acid Lime Yellow (Yellow)
+color3 = "#EAE43E"        # yellow / warnings / numbers
+color11 = "#FFFF4C"       # bright_yellow / cyberpunk yellow (primary accent)
+
+# Electric Indigo (Blue)
+color4 = "#5A4ED6"        # blue / constants / links
+color12 = "#5A4ED6"       # bright_blue
+
+# Vivid Neon Fuchsia (Magenta)
+color5 = "#DA11C9"        # magenta / keywords / operators
+color13 = "#B03DCE"       # bright_magenta / neon orchid (types)
+
+# Cyber Sky Blue (Cyan)
+color6 = "#02B3F1"        # cyan / variables / secondary
+color14 = "#1BD7F8"       # bright_cyan / vivid electric cyan
+
+# Luminous Aqua (White/Foreground)
+color7 = "#46FEEC"        # white / foreground / primary text
+color15 = "#46FEEC"       # bright_white / bright_foreground
+
+# Semantic aliases (used by templates)
+background = "#26173E"
+foreground = "#46FEEC"
+accent = "#DA11C9"
+cursor = "#FFFF4C"
+selection_background = "#ED4BA8"
+selection_foreground = "#FFFF4C"
 lighter_bg = "#28187D"
-selection = "#ED4BA8"
-# Readable low-emphasis text; dark_fg remains structural steel blue.
 muted = "#3D99CA"
 dark_fg = "#3D99CA"
-fg = "#46FEEC"
-light_fg = "#46FEEC"
-soft_fg = "#02B3F1"
-bright_fg = "#46FEEC"
 red = "#FF003C"
 green = "#1BD7F8"
 yellow = "#EAE43E"
@@ -55,11 +54,15 @@ magenta = "#DA11C9"
 cyan = "#02B3F1"
 orange = "#FFFF4C"
 brown = "#94007A"
-dark_bg = "#26173E"
-darker_bg = "#26173E"
 bright_red = "#FF003C"
 bright_green = "#1BD7F8"
-bright_yellow = "#FFFF00"
+bright_yellow = "#FFFF4C"
 bright_blue = "#5A4ED6"
 bright_magenta = "#B03DCE"
 bright_cyan = "#1BD7F8"
+
+# Neovim/Lua extras (kept for compatibility with neovim.lua palette)
+dark_bg = "#26173E"
+darker_bg = "#26173E"
+light_fg = "#46FEEC"
+bright_fg = "#46FEEC"
