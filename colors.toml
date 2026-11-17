@@ -66,3 +66,6 @@ dark_bg = "#26173E"
 darker_bg = "#26173E"
 light_fg = "#46FEEC"
 bright_fg = "#46FEEC"
+
+# Additional accent colors
+neon_green = "#39FF14"       # true neon green (Rebecca's green)

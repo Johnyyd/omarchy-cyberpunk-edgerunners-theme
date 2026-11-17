@@ -50,6 +50,7 @@ DARK_BG="$(get_color 'dark_bg')"
 DARKER_BG="$(get_color 'darker_bg')"
 LIGHT_FG="$(get_color 'light_fg')"
 BRIGHT_FG="$(get_color 'bright_fg')"
+NEON_GREEN="$(get_color 'neon_green')"
 
 # ANSI colors
 COLOR0="$(get_color 'color0')"
@@ -102,6 +103,7 @@ apply_substitutions() {
         -e "s/{{ darker_bg }}/$DARKER_BG/g" \
         -e "s/{{ light_fg }}/$LIGHT_FG/g" \
         -e "s/{{ bright_fg }}/$BRIGHT_FG/g" \
+        -e "s/{{ neon_green }}/$NEON_GREEN/g" \
         -e "s/{{ lighter_bg }}/$LIGHTER_BG/g" \
         -e "s/{{ color0 }}/$COLOR0/g" \
         -e "s/{{ color1 }}/$COLOR1/g" \
@@ -158,6 +160,7 @@ cat > "$REPO_DIR/colors.css" <<EOF
   @define-color green $GREEN;
   @define-color yellow $YELLOW;
   @define-color red $RED;
+  @define-color neon_green $NEON_GREEN;
 EOF
 
 echo "✅ Generated colors.css"

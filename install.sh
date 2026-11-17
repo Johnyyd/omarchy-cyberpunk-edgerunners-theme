@@ -65,7 +65,7 @@ rsync -a \
   --exclude='.git*' \
   --exclude='*.md' \
   --exclude='*.sh' \
-  --exclude='*.tpl' \
+  --exclude='*.tpl' \  --exclude='colors.toml' \
   --exclude='preview*.png' \
   --exclude='LICENSE' \
   --exclude='*.bak' \

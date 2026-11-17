@@ -141,6 +141,7 @@ border-alpha     = 0.88
 scrim            = "{{ background }}"
 scrim-alpha      = 0.66
 accent           = "{{ accent }}"
+success          = "{{ neon_green }}"
 
 [lock]
 background       = "{{ background }}"

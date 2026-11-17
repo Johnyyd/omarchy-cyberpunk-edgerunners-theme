@@ -27,6 +27,7 @@ theme[cpu_box]="{{ selection_background }}"
 theme[mem_box]="{{ orange }}"
 theme[net_box]="{{ cyan }}"
 theme[proc_box]="{{ accent }}"
+theme[gpu_box]="{{ neon_green }}"
 theme[div_line]="{{ lighter_bg }}"
 
 # Gradient for all meters and graphs

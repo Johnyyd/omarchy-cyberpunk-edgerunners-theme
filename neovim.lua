@@ -32,6 +32,7 @@ return {
         bright_cyan = "#1BD7F8",
         bright_blue = "#5A4ED6",
         bright_magenta = "#B03DCE",
+        neon_green = "#39FF14",
 
         accent = "#DA11C9",
         cursor = "#FFFF4C",

@@ -141,6 +141,7 @@ border-alpha     = 0.88
 scrim            = "#26173E"
 scrim-alpha      = 0.66
 accent           = "#DA11C9"
+success          = "#39FF14"
 
 [lock]
 background       = "#26173E"

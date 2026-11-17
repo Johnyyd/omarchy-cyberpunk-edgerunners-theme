@@ -32,6 +32,7 @@ return {
         bright_cyan = "{{ bright_cyan }}",
         bright_blue = "{{ bright_blue }}",
         bright_magenta = "{{ bright_magenta }}",
+        neon_green = "{{ neon_green }}",
 
         accent = "{{ accent }}",
         cursor = "{{ cursor }}",

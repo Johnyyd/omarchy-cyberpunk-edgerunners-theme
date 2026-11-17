@@ -27,6 +27,7 @@ theme[cpu_box]="#ED4BA8"
 theme[mem_box]="#FFFF4C"
 theme[net_box]="#02B3F1"
 theme[proc_box]="#DA11C9"
+theme[gpu_box]="#39FF14"
 theme[div_line]="#28187D"
 
 # Gradient for all meters and graphs
